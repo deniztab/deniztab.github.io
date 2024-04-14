@@ -1,7 +1,183 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deniz Tabakci</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #222;
+            color: #eee;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+            background-color: #333;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        }
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 50px 0;
+        }
+        h1 {
+            color: #fff;
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+        p {
+            color: #ccc;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        .educations,
+        .projects {
+            margin-top: 50px;
+        }
+        .education-item,
+        .project {
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: #444;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+        .education-item h3{
+            color: #fff;
+            font-size: 24px;
+            margin-bottom: 10px;
+            margin-top: 5px; /* Adjust margin-top to achieve desired alignment */
+        }
+
+        .project h3 {
+            color: #fff;
+            font-size: 24px;
+            margin-bottom: 10px;
+            cursor: pointer;
+            margin-top: 5px; /* Adjust margin-top to achieve desired alignment */
+        }
+        .project h3:hover {
+            color: #ffffffb0; /* Change text color on hover */
+        }
+        .education-item p,
+        .project p {
+            color: #ccc;
+            font-size: 16px;
+        }
+        footer {
+            margin-top: 50px;
+            text-align: center;
+            color: #ccc;
+            padding-bottom: 30px;
+        }
+        footer h3 {
+            color: #fff;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        footer p {
+            margin-bottom: 10px;
+        }
+        a {
+            color: #66c2ff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .project-details {
+            display: none;
+            padding: 20px;
+            background-color: #444;
+            /* border-radius: 10px; */
+            /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); */
+            color: #ccc;
+            margin-top: 10px;
+        }
+    </style>
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+
+<div class="container">
+    <header>
+        <h1>Deniz Tabakci</h1>
+        <p>Write a short description of yourself here.</p>
+    </header>
+
+    <section class="education">
+        <h2>Education</h2>
+        <div class="education-item">
+            <h3>University of British Columbia</h3>
+            <p>Bachelors of Applied Science - Electrical Engineering</p>
+            <p> January 2024</p>
+        </div>
+        <!-- Add more education details as needed -->
+    </section>
+
+    <section class="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>
+                Shutters
+            </h3>
+            <div class="project-details">
+                <p>The Shutters Project is an interactive art installation designed to engage its users dynamically. As users move within its vicinity, the shutters respond accordingly: opening upon detecting movement and closing when motion subsides.
+                    For this project, I assumed responsibility for both firmware and software development. Utilizing OpenCV in Python, I engineered the motion detection software, enabling precise responsiveness to user movements. Complementing this, I leveraged C++ to manage the intricate motor controls essential for the shutters' operation. Additionally, I oversaw the seamless integration of all software and firmware components, ensuring the project's cohesive functionality.
+                </p>
+                <video width="320" height="240" controls>
+                    <source src="Video.mov" type="video/mov">
+                    Your browser does not support the video tag.
+                </video>
+                <!-- Add more details as needed -->
+            </div>
+        </div>
+        <div class="project">
+            <h3>
+                "Untitled" Video Game
+            </h3>
+            <div class="project-details">
+                <p>
+                    A narrative-driven video game that I am currently leading. Within this role, I serve as a Lead Programmer, a Level Designer and the Project Manager, responsible for overseeing multiple facets of the project. As the Lead Programmer, I spearhead the technical implementation of game mechanics, systems, and features. Simultaneously, in my capacity as Project Manager, I coordinate and manage the efforts of the arts, software, and level design teams, maintaining alignment with the project's overarching vision and goals.</p>
+                <!-- Add more details as needed -->
+            </div>
+        </div>
+        <!-- Add more projects as needed -->
+    </section>
+
+
+    <footer>
+        <!-- <h3>Contact Information</h3> -->
+        <p>deniz.tabakci2000@gmail.com | <a>LinkedIn</a> | <a>GitHub</a></p>
+        <!-- Add more contact information as needed -->
+    </footer>
+</div>
+
+<script>
+    // Get all project elements
+    const projects = document.querySelectorAll('.project');
+
+    // Add click event listener to each project title
+    projects.forEach(project => {
+        const projectDetails = project.querySelector('.project-details');
+        const projectTitle = project.querySelector('h3');
+        projectTitle.addEventListener('click', () => {
+            // Close all other project details
+            projects.forEach(otherProject => {
+                if (otherProject !== project) {
+                    otherProject.querySelector('.project-details').style.display = 'none';
+                }
+            });
+
+            // Toggle visibility of clicked project details
+            projectDetails.style.display = projectDetails.style.display === 'none' ? 'block' : 'none';
+        });
+    });
+</script>
+
 </body>
 </html>
