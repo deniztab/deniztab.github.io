@@ -9,12 +9,12 @@ title: Projects
 <section class="introduction">
   <div class="intro-left">
     <div class="name">
-      <h1>Deniz Tabakci</h1><h2>Technical Projects</h2>
+      <h1>Deniz Tabakci | Technical Projects</h1>
     </div>
   </div>
   <div class="intro-right">
     <div class="bar">
-      <a href="{{ '/Home' | relative_url }}" class="button">Home</a>
+      <a href="{{ '/' | relative_url }}" class="button">Home</a>
     </div>
   </div>
 </section>
@@ -33,7 +33,6 @@ title: Projects
 <!-- Section 3: Contact -->
 <div class="contact">
   <h2>Contact Me</h2>
-  <p>Feel free to reach out to me through the following channels:</p>
   <div class="contact-info">
     <div class="contact-item">
       <i class="fa fa-envelope" aria-hidden="true"></i><a href="mailto:deniz.tabakci2000@gmail.com">deniz.tabakci2000@gmail.com</a>

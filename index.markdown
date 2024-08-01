@@ -15,7 +15,7 @@ title: Home
   </div>
   <div class="intro-right">
     <div class="bar">
-      <a href="{{ '/projects' | relative_url }}" class="button">Projects</a>
+      <a href="{{ '/Projects' | relative_url }}" class="button">Projects</a>
     </div>
     <div class="intro-title">
       <p>Hello.</p>
@@ -110,7 +110,6 @@ title: Home
 <!-- Section 5: Contact -->
 <div class="contact">
   <h2>Contact Me</h2>
-  <p>Feel free to reach out to me through the following channels:</p>
   <div class="contact-info">
     <div class="contact-item">
       <i class="fa fa-envelope" aria-hidden="true"></i><a href="mailto:deniz.tabakci2000@gmail.com">deniz.tabakci2000@gmail.com</a>
