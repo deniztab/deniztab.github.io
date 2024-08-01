@@ -37,13 +37,13 @@ title: Home
     </div>
     <div class="project-description project-description-left">
         <p>This project involves large rotating shutters which react to movements ooccuring in front of it. It utilizes OpenCV's background subtractors to detect changes in its field of view and move shutters corresponding to location where the movement was detected. The project runs on Raspberry Pi and Arduino units.</p>
-        <a href="{{ '/projects#project1' | relative_url }}" class="details-button">Details</a>
+        <a href="{{ '/projects#shutter' | relative_url }}" class="details-button">Details</a>
     </div>
   </div>
   <div class="project-row">
     <div class="project-description project-description-right">
         <p>My capstone project at UBC, in collaboration with MDA. Utilizing image processing techniques to create detailed images of Earth orbiting sattelites using low quality videos taken from Earth. </p>
-        <a href="{{ '/projects#project2' | relative_url }}" class="details-button">Details</a>
+        <a href="{{ '/projects#sat' | relative_url }}" class="details-button">Details</a>
     </div>
     <div class="project-block project-block-right">
       <div class="project-title">Sattelite Video Processing</div>
@@ -55,7 +55,7 @@ title: Home
     </div>
     <div class="project-description project-description-left">
         <p>A small personal project focusing on detecting and tracking hand movements. It runs on multiple processes and supports up to 6 different hands being tracked in real time.</p>
-        <a href="{{ '/projects#project1' | relative_url }}" class="details-button">Details</a>
+        <a href="{{ '/projects#hand' | relative_url }}" class="details-button">Details</a>
     </div>
   </div>
 </section>
@@ -97,12 +97,8 @@ title: Home
 <!-- Section 4: Quotes -->
 <section class="quotes">
 <blockquote>
-    <p>"Straight up legend."</p>
-    <div class="author">- unknown</div>
-</blockquote>
-<blockquote>
-    <p>"Goated, based, and full of rizz."</p>
-    <div class="author">- unknown</div>
+    <p>"He has proven himself to be a valuable asset to any team, capable of leading projects to successful outcomes through his knowledge and proactive approach... I highly recommend Deniz Tabakci for any opportunity that aligns with his skills and interests. He would undoubtedly contribute positively to any organization."</p>
+    <div class="author">MDA - Balaji Shankar Kumar</div>
 </blockquote>
 <!-- Add more quotes as needed -->
 </section>
