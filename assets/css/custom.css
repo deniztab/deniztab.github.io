@@ -1,0 +1,370 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5; /* Off-white */
+    overflow-x: hidden;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+
+  .title h1 {
+    font-size: 3.5em;
+    margin: 0;
+    font-family: 'Caveat', cursive;
+    color: #00162c;
+  }
+
+  .title h2 {
+    font-size: 3.5em;
+    margin: 0;
+    font-family: 'Caveat', cursive;
+    color: #f5f5f5;
+  }
+  
+  /* Section 1: Introduction */
+  .introduction {
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .intro-left, .intro-right {
+    flex: 1;
+    position: relative;
+  }
+  
+  .intro-left {
+    background: url('/assets/images/PHOTO.jpg') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    color: white;
+    padding: 20px;
+    box-shadow: 5px 0px 25px rgba(0, 0, 0, 0.678); /* Shadow cast on the right */
+    z-index: 2;
+  }
+  
+  .name h1 {
+    font-size: 6.5em;
+    margin: 0;
+    font-family: 'Caveat', cursive;
+  }
+  
+  .intro-right {
+    background-color: #00162c; /* Navy blue */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .bar {
+    background-color: #00000048; /* Navy blue */
+    padding: 10px;
+    text-align: right;
+    position: fixed;
+    top: 0;
+    font-size: 1.5em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0.4, 0.4); /* Add shadow */
+    z-index: 10;
+    right: 0;
+    }
+  
+  .button {
+    color: #f5f5f5; /* Off-white */
+    margin-left: 80px;
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+    .intro-title,
+    .intro-text {
+    opacity: 0; /* Start with the elements hidden */
+    }
+
+  .intro-title {
+    font-family: "Caveat", cursive;
+    font-size: 6.2em; /* Larger font size for the title */
+    font-weight: 700; /* Use bold weight */
+    margin-bottom: 20px; /* Space between title and text */
+    text-align: center; /* Center align the title */
+    animation: fadeIn 1s ease-in forwards; /* Apply the fade-in animation */
+    animation-delay: 1s; /* Delay before the animation starts */
+  }
+  
+  .intro-text {
+    padding: 20px;
+    font-size: 2.2em;
+    text-align: right;
+    animation: fadeIn 1s ease-in forwards; /* Apply the fade-in animation */
+    animation-delay: 2s; /* Delay before the animation starts */
+  }
+  
+  /* Section 2: Projects */
+  .projects {
+    padding: 50px 20px;
+    background-color: #f5f5f5; /* Off-white */
+    text-align: center;
+  }
+  
+  .project-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  
+  .project-block {
+    flex: 0 1 40%; /* Allow each block to take up 30% of the row width */
+    height: 200px; /* Example height to increase vertical space */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+    margin: 10px; /* Margin around each block */
+    vertical-align: top; /* Align blocks to the top */
+    transition: transform 0.3s, opacity 0.3s, margin-left, 0.3s, margin-right, 0.3s; /* Smooth transition for hover effects */
+    /* background-color: #00162c; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .project-block-left {
+    margin-right: auto; /* Shift block to the left of the middle */
+    margin-left: 100px; /* Margin to the left */
+  }
+  
+  .project-block-right {
+    margin-left: auto; /* Shift block to the right of the middle */
+    margin-right: 100px; /* Margin to the right */
+  }
+  
+  .project-row:hover .project-block-left {
+    transform: scale(1.05); /* Slightly enlarge the block on hover */
+    margin-left: -200px;
+    opacity: 0; /* Slightly fade the block on hover */
+  }
+
+  .project-row:hover .project-block-right {
+    transform: scale(1.05); /* Slightly enlarge the block on hover */
+    margin-right: -200px;
+    opacity: 0; /* Slightly fade the block on hover */
+  }
+  
+  .project-description {
+    flex: 0 1 50%;
+    color: #00162c; /* Off-white */
+    font-size: 1.4em;
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+
+  .project-description-right {
+    margin-right: auto; /* Shift block to the left of the middle */
+    margin-left: 100px; /* Margin to the left */
+    text-align: left;
+  }
+
+  .project-description-left {
+    margin-left: auto; /* Shift block to the right of the middle */
+    margin-right: 100px;
+    text-align: right;
+  }
+  
+  .project-row:hover .project-description {
+    opacity: 1;
+  }
+  
+  .project-title {
+    padding: 10px;
+    font-size: 2.8em;
+    text-align: center;
+    color: #00162c; /* Navy blue */
+  }
+
+  /* Section 3: Work */
+  .work {
+    padding: 50px 20px;
+    background-color: #00162c;
+    text-align: center;
+  }
+
+  .work-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  
+  .work-block {
+    flex: 0 1 40%; /* Allow each block to take up 30% of the row width */
+    height: 200px; /* Example height to increase vertical space */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+    margin: 10px; /* Margin around each block */
+    transition: transform 0.3s, opacity 0.3s, margin-left, 0.3s, margin-right, 0.3s; /* Smooth transition for hover effects */
+    display: block;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .work-block-left {
+    margin-right: auto; /* Shift block to the left of the middle */
+    margin-left: 100px; /* Margin to the left */
+  }
+  
+  .work-block-right {
+    margin-left: auto; /* Shift block to the right of the middle */
+    margin-right: 100px; /* Margin to the right */
+  }
+  
+  .work-row:hover .project-block-left {
+    transform: scale(1.05); /* Slightly enlarge the block on hover */
+    margin-left: -200px;
+    opacity: 0; /* Slightly fade the block on hover */
+  }
+
+  .work-row:hover .project-block-right {
+    transform: scale(1.05); /* Slightly enlarge the block on hover */
+    margin-right: -200px;
+    opacity: 0; /* Slightly fade the block on hover */
+  }
+  
+  .work-description {
+    flex: 0 1 50%;
+    color:#f5f5f5; /* Off-white */
+    font-size: 1.4em;
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+
+  .work-description-right {
+    margin-right: auto; /* Shift block to the left of the middle */
+    margin-left: 100px; /* Margin to the left */
+    text-align: left;
+  }
+
+  .work-description-left {
+    margin-left: auto; /* Shift block to the right of the middle */
+    margin-right: 100px;
+    text-align: right;
+  }
+  
+  .work-row:hover .work-description {
+    opacity: 1;
+  }
+  
+  .work-title {
+    padding: 10px;
+    font-size: 2.8em;
+    text-align: center;
+    color: #f5f5f5; /* Navy blue */
+  }
+
+  .work-subtitle {
+    font-size: 2.2em;
+    text-align: center;
+    color: #c0bfbf; /* Navy blue */
+  }
+  
+  .work-row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .work-dates {
+    font-size: 0.9em;
+    color: #666;
+  }
+  
+  /* Section 4: Quotes */
+  .quotes {
+    padding: 50px 20px;
+    background-color: #f5f5f5; /* Off-white */
+    text-align: center;
+  }
+  
+  blockquote {
+    display: inline-block;
+    max-width: 500px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #ffffff; /* White */
+    border-left: 4px solid 00162c; /* Navy blue */
+    font-style: italic;
+    font-size: 1.5em;
+  }
+  
+  .author {
+    font-size: 0.9em;
+    color: #00162c6e;
+  }
+
+/* Section 5: Footer */
+  
+/* Contact Section */
+.contact {
+    padding: 50px 20px;
+    background-color: #f5f5f5; /* Off-white */
+    text-align: center;
+    border-top: 2px solid #00162c; /* Navy blue border at the top */
+  }
+  
+  .contact h2 {
+    font-family: "Roboto", sans-serif;
+    font-size: 2.5em;
+    color: #00162c; /* Navy blue */
+    margin-bottom: 20px;
+  }
+  
+  .contact p {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.2em;
+    color: #333; /* Darker gray for better readability */
+    margin-bottom: 20px;
+  }
+  
+  .contact a {
+    color: #00162c; /* Navy blue */
+    text-decoration: none;
+    font-weight: 500; /* Slightly bolder text for links */
+    transition: color 0.3s ease, text-decoration 0.3s ease; /* Smooth transition effect */
+  }
+  
+  .contact a:hover {
+    color: #007bff; /* Light blue color on hover */
+    text-decoration: underline;
+  }
+  
+  .contact .contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px; /* Space between contact items */
+  }
+  
+  .contact .contact-item {
+    font-family: "Roboto", sans-serif;
+    font-size: 1em;
+    color: #333; /* Darker gray for better readability */
+  }
+  
+  .contact .contact-item i {
+    margin-right: 10px; /* Space between icon and text */
+    color: #00162c; /* Navy blue for icons */
+  }
+  
+  
