@@ -21,7 +21,7 @@ title: Home
       <p>Hello.</p>
     </div>
     <div class="intro-text">
-      <p>I am a Data Engineer and Software Developer passionate about creating innovative solutions and tackling complex challenges. My experience spans data ingestion, processing, and analysis, image and video processing, machine learning, and reinforcement learning.</p>
+      <p>"I am a Data Engineer and Software Developer, passionate about creating innovative solutions and tackling complex challenges. My experience spans data ingestion, processing and analysis; image and video processing; machine learning; and reinforcement learning."</p>
     </div>
   </div>
 </section>
