@@ -110,7 +110,7 @@ title: Home
     <div class="author">MDA - Balaji Shankar Kumar</div>
 </blockquote>
 <blockquote>
-    <p>From day one, Deniz set the tone with a clear question: “How can I best support my manager, team, and company?” He answered it daily through his actions... Amid an exceptionally tight delivery window, Deniz assumed full ownership of our legacy products in half the usual ramp‑up time... Deniz is candid, reliable, and keeps the mission front and center. He’s the teammate who volunteers for the hard parts and sees them through.</p>
+    <p>From day one, Deniz set the tone with a clear question: “How can I best support my manager, team, and company?” He answered it daily through his actions...  He is candid, reliable, and keeps the mission front and center. He’s the teammate who volunteers for the hard parts and sees them through... If I had a suitable opening today, he’d already have an offer in hand.</p>
     <div class="author">ThinkCX - Derek Muxworthy</div>
 </blockquote>
 <!-- Add more quotes as needed -->
