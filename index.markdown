@@ -65,7 +65,6 @@ title: Home
   <div class="title">
     <h2>Work Experiences</h2>
   </div>
-  </div>
   <div class="work-row">
     <div class="work-description project-description-left">
         <p>Took ownership of 2 mission-critical project pipelines in my first 4 months including Data Ingestion and ISP Market Share while working with Billion+ rows of data on a daily basis. Developed and deployed multiple production-level SQL scripts including highly sophisticated Anomaly detection and filtering algorithms.</p>
