@@ -21,7 +21,7 @@ title: Home
       <p>Hello.</p>
     </div>
     <div class="intro-text">
-      <p>I am a software developer passionate about creating innovative solutions and tackling complex challenges. My experience spans image and video processing, machine learning, reinforcement learning, and data processing.</p>
+      <p>I am a Data Engineer and Software Developer passionate about creating innovative solutions and tackling complex challenges. My experience spans data ingestion, processing, and analysis, image and video processing, machine learning, and reinforcement learning.</p>
     </div>
   </div>
 </section>
@@ -66,12 +66,12 @@ title: Home
     <h2>Work Experiences</h2>
   </div>
   <div class="work-row">
-    <div class="work-description project-description-left">
-        <p>Took ownership of 2 mission-critical project pipelines in my first 4 months including Data Ingestion and ISP Market Share while working with Billion+ rows of data on a daily basis. Developed and deployed multiple production-level SQL scripts including highly sophisticated Anomaly detection and filtering algorithms.</p>
-    </div>
     <div class="work-block project-block-left">
       <div class="work-title">ThinkCX</div>
       <div class="work-subtitle">Junior Data Engineer</div>
+    </div>
+    <div class="work-description project-description-left">
+        <p>Took ownership of 2 mission-critical project pipelines in my first 4 months including Data Ingestion and ISP Market Share while working with Billion+ rows of data on a daily basis. Developed and deployed multiple production-level SQL scripts including highly sophisticated Anomaly detection and filtering algorithms.</p>
     </div>
   </div>
   <div class="work-row">
@@ -92,7 +92,7 @@ title: Home
         <p>Created from scratch, a Hyper-parameter tuning algorithm in Python, utilizing Reinforcement Learning. Built a tool around the algorithm to train high accuracy XGBoost Machine Learning models. Co-authored a published research paper as a result of my work on the algorithm. The research paper can be found <a href="https://ieeexplore.ieee.org/document/10194065" target="_blank">here</a>.</p>
     </div>
   </div>
-    <div class="work-row">
+  <div class="work-row">
     <div class="work-description project-description-right">
         <p>Contributed to six sprints within an Agile team employing Scrum methodology for Agile software development. I developed and assisted in the development of REST APIs for the mobile banking application using Java in conjunction with the Spring framework. </p>
     </div>
