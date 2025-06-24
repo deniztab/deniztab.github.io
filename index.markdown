@@ -68,6 +68,15 @@ title: Home
   </div>
   <div class="work-row">
     <div class="work-description project-description-right">
+        <p>Took ownership of 2 mission-critical project pipelines in my first 4 months including Data Ingestion and ISP Market Share while working with Billion+ rows of data on a daily basis. Developed and deployed multiple production-level SQL scripts including highly sophisticated Anomaly detection and filtering algorithms.</p>
+    </div>
+    <div class="work-block project-block-right">
+      <div class="work-title">ThinkCX</div>
+      <div class="work-subtitle">Junior Data Engineer</div>
+    </div>
+  </div>
+  <div class="work-row">
+    <div class="work-description project-description-right">
         <p>Led the integration of a client-side metrics monitoring tool using Ruby on Rails. Participated in Agile software development including all of the Agile ceremonies. Produced, tested and deployed production ready code. </p>
     </div>
     <div class="work-block project-block-right">
@@ -99,6 +108,10 @@ title: Home
 <blockquote>
     <p>"He has proven himself to be a valuable asset to any team, capable of leading projects to successful outcomes through his knowledge and proactive approach... I highly recommend Deniz Tabakci for any opportunity that aligns with his skills and interests. He would undoubtedly contribute positively to any organization."</p>
     <div class="author">MDA - Balaji Shankar Kumar</div>
+</blockquote>
+<blockquote>
+    <p>"From day one, Deniz set the tone with a clear question: “How can I best support my manager, team, and company?” He answered it daily through his actions." \n"Deniz is candid, reliable, and keeps the mission front and center. He’s the teammate who volunteers for the hard parts and sees them through." \n"Amid an exceptionally tight delivery window, Deniz assumed full ownership of our legacy products in half the usual ramp‑up time..."</p>
+    <div class="author">ThinkCX - Derek Muxworthy</div>
 </blockquote>
 <!-- Add more quotes as needed -->
 </section>
